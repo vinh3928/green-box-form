@@ -1,57 +1,62 @@
 
-body {
+form {
+  border: 1px solid black;
   background: rgba(73, 186, 126, 1);
+  width: 80%;
+  text-align: center;
 }
 
-form {
-  width: 80%;
-  border: 2px black solid;
-}
-.name, .email, .message{
-  border: 1px solid red;
+input {
+  width: 40%;
+  height: 26px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,.6);
   background: transparent;
-  border: 1px solid rgba(255,255,255,.8);
-  padding: 10px;
   border-radius: 5px;
+  font-size: 26px;
 }
 
 .name {
-  width: 40%;
-  margin: 4% 2% 4% 4%;
-  height: 40px;
-  font-size: 18px;
+  margin: 40px 40px 40px 0px;
+
 }
 
 .email {
-  width: 40%;
-  margin: 4% 4% 4% 2%;
-  font-size: 18px;
-  height: 40px;
+  margin: 0px 0px 40px 0px;
 }
 
 .message {
-  width: 87.5%;
   display: block;
-  margin: 0% 4%;
-  height: 300px;
+  width: 89%;
+  height: 280px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 26px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 5px;
 }
 
 .submit {
-  width: 35%;
-  display: block;
-  text-transform: uppercase;
-  margin: 4% auto 4% auto;
-  height: 70px;
-  font-size: 20px;
-  border-radius: 5px;
+  width: 36%;
+  height: 80px;
+  border-radius: 8px;
   background: white;
   border: none;
-  font-weight: 700;
   color: rgba(73, 186, 126, 1);
+  margin: 40px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 ::-webkit-input-placeholder {
-  font-size: 18px;
-  color: rgba(225,225,225,.4);
-}
+     color: rgba(255,255,255,.4);
+   }
 
+@media (max-width: 840px) {
+    input {
+      width: 100%;
+     }
+}
